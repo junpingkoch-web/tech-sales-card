@@ -251,6 +251,6 @@
   }
 
   /* ---------- init ---------- */
-  var savedLang = localStorage.getItem(STORAGE_KEY) || "en";
+  var savedLang = localStorage.getItem(STORAGE_KEY) || "de";
   applyLang(savedLang);
 })();
