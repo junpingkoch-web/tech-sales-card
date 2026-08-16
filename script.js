@@ -37,7 +37,7 @@
       proof1: "Trilingual zodiac calculator, custom SVG wheel.",
       proof2: "Free tool for splitting people into fair groups.",
       proof3: "Real CHF market-price data for luxury watches.",
-      contactHeading: "./get_in_touch.sh",
+      contactHeading: "Get_in_touch",
       contactBody: "Open to Tech Sales / SDR / Account Executive conversations — Swiss & DACH region or remote.",
       footer: "Built solo with Claude Code — no template, no agency."
     },
@@ -74,7 +74,7 @@
       proof1: "Dreisprachiger Tierkreis-Rechner mit eigenem SVG-Rad.",
       proof2: "Kostenloses Tool zum fairen Aufteilen von Gruppen.",
       proof3: "Echte CHF-Marktpreisdaten für Luxusuhren.",
-      contactHeading: "./kontakt_aufnehmen.sh",
+      contactHeading: "Kontakt_aufnehmen",
       contactBody: "Offen für Gespräche zu Tech Sales / SDR / Account Executive — Schweiz & DACH-Raum oder remote.",
       footer: "Im Alleingang mit Claude Code gebaut — keine Vorlage, keine Agentur."
     }
