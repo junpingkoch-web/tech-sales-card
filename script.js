@@ -149,7 +149,6 @@
   var bgCanvas = document.getElementById("bgCanvas");
   var bgCtx = bgCanvas.getContext("2d");
   var particles = [];
-  var mouse = { x: null, y: null };
 
   function resizeBg(){
     // #bgCanvas is position:fixed, so it never moves with scroll — sizing it to
