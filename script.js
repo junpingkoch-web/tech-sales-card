@@ -152,8 +152,11 @@
   var mouse = { x: null, y: null };
 
   function resizeBg(){
+    // #bgCanvas is position:fixed, so it never moves with scroll — sizing it to
+    // the viewport (not the full, much taller document) keeps clearRect()/draw
+    // work proportional to what's actually visible instead of the whole page.
     bgCanvas.width = window.innerWidth;
-    bgCanvas.height = document.documentElement.scrollHeight;
+    bgCanvas.height = window.innerHeight;
   }
   function initParticles(){
     var count = Math.min(70, Math.floor((window.innerWidth * window.innerHeight) / 22000));
@@ -161,7 +164,7 @@
     for (var i = 0; i < count; i++){
       particles.push({
         x: Math.random() * bgCanvas.width,
-        y: Math.random() * window.innerHeight,
+        y: Math.random() * bgCanvas.height,
         vx: (Math.random() - 0.5) * 0.25,
         vy: (Math.random() - 0.5) * 0.25
       });
@@ -169,8 +172,6 @@
   }
   function drawBg(){
     bgCtx.clearRect(0, 0, bgCanvas.width, bgCanvas.height);
-    var viewTop = window.scrollY;
-    var viewBottom = viewTop + window.innerHeight;
     bgCtx.strokeStyle = "rgba(92, 242, 176, 0.14)";
     bgCtx.fillStyle = "rgba(92, 242, 176, 0.55)";
 
@@ -178,11 +179,9 @@
       var p = particles[i];
       p.x += p.vx; p.y += p.vy;
       if (p.x < 0 || p.x > bgCanvas.width) p.vx *= -1;
-      if (p.y < 0 || p.y > window.innerHeight) p.vy *= -1;
-      var drawY = p.y + viewTop;
-      if (drawY < viewTop - 50 || drawY > viewBottom + 50) continue;
+      if (p.y < 0 || p.y > bgCanvas.height) p.vy *= -1;
       bgCtx.beginPath();
-      bgCtx.arc(p.x, drawY, 1.6, 0, Math.PI * 2);
+      bgCtx.arc(p.x, p.y, 1.6, 0, Math.PI * 2);
       bgCtx.fill();
       for (var j = i + 1; j < particles.length; j++){
         var q = particles[j];
@@ -191,8 +190,8 @@
         if (dist < 130){
           bgCtx.globalAlpha = 1 - dist / 130;
           bgCtx.beginPath();
-          bgCtx.moveTo(p.x, drawY);
-          bgCtx.lineTo(q.x, q.y + viewTop);
+          bgCtx.moveTo(p.x, p.y);
+          bgCtx.lineTo(q.x, q.y);
           bgCtx.stroke();
           bgCtx.globalAlpha = 1;
         }
