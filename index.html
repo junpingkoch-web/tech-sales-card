@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Junping Koch — Tech Sales</title>
+<meta name="description" content="Junping Koch — digital business card. Front-line luxury retail sales, trilingual (DE/EN/ZH), self-taught builder of 12+ AI-assisted web tools. Transitioning into Tech Sales.">
+<!-- Personal interview card, not meant to be indexed/discovered publicly by default. Remove this line once you're ready to share it broadly. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <span class="brand-mark">JK<span class="cursor-blip">_</span></span>
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button class="lang-btn active" data-lang="en" type="button">EN</button>
+    <button class="lang-btn" data-lang="de" type="button">DE</button>
+  </div>
+</div>
+
+<main class="page">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="avatar-ring">
+      <img src="images/junping-koch.jpg" alt="Junping Koch" class="avatar-img">
+    </div>
+
+    <div class="terminal-window hero-terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">junping@tech-sales <span id="clock"></span></span>
+      </div>
+      <div class="terminal-body">
+        <p class="term-line"><span class="prompt">$</span> whoami</p>
+        <p class="term-output" id="typeTarget" data-en="Junping Koch — front-line sales pro turned self-taught builder." data-de="Junping Koch — Verkaufsprofi mit Ladenerfahrung, jetzt Selbstlern-Entwickler."></p>
+        <span class="term-cursor">▋</span>
+      </div>
+    </div>
+
+    <h1 class="hero-name">Junping Koch</h1>
+    <p class="hero-role" data-i18n="heroRole">Aspiring Tech Sales · Bridging Product, People &amp; Code</p>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:junping.koch@gmail.com" data-i18n="ctaEmail">Email me</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/junpingkoch1978" target="_blank" rel="noopener" data-i18n="ctaLinkedin">LinkedIn</a>
+      <a class="btn btn-outline" href="https://junpingkoch-web.github.io" target="_blank" rel="noopener" data-i18n="ctaPortfolio">Web Tools Portfolio ↗</a>
+      <a class="btn btn-outline" href="junping-koch-cv.pdf" target="_blank" rel="noopener" data-i18n="ctaResume">Résumé (PDF)</a>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <span class="chev">⌄</span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section reveal" id="about">
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">$ cat about.md</span>
+      </div>
+      <div class="terminal-body about-body">
+        <p data-i18n="aboutP1">Eight years on the sales floor of three of Switzerland's best-known luxury houses — <strong>Bucherer, Swatch and Coop City</strong> — reading a customer's intent in the first ten seconds, translating technical detail (movements, materials, provenance) into a story that closes the sale, in <strong>German, English, Chinese and Spanish</strong>.</p>
+        <p data-i18n="aboutP2">Outside working hours I taught myself to ship real software. Since 2025 I've solo-built and deployed a portfolio of <strong>12+ live web tools</strong> — using AI coding agents as my engineering partner — handling everything from product decisions to SEO, analytics and monetization myself. This page is one of them.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY TECH SALES ===== -->
+  <section class="section reveal" id="why">
+    <h2 class="section-title"><span class="prompt">#</span> <span data-i18n="whyHeading">Why Tech Sales</span></h2>
+    <div class="card-grid">
+      <div class="feat-card">
+        <div class="feat-icon">🗣️</div>
+        <h3 data-i18n="whyCard1Title">Customer-facing DNA</h3>
+        <p data-i18n="whyCard1Body">Years of reading people face-to-face, handling objections, and closing — the muscle every SaaS demo call also needs.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🌐</div>
+        <h3 data-i18n="whyCard2Title">Trilingual, DE/EN/ZH</h3>
+        <p data-i18n="whyCard2Body">Native-level Chinese, fluent German and English — able to sell and support across three markets without a translator.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">⚙️</div>
+        <h3 data-i18n="whyCard3Title">Self-taught builder</h3>
+        <p data-i18n="whyCard3Body">No CS degree, no bootcamp — just 12+ shipped tools, real users, real GA4 data. I understand the product, not just the pitch.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📈</div>
+        <h3 data-i18n="whyCard4Title">Owns the whole funnel</h3>
+        <p data-i18n="whyCard4Body">Every tool I ship, I also position, SEO-optimize, and monetize myself — I think in outcomes, not just tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE TIMELINE ===== -->
+  <section class="section reveal" id="experience">
+    <h2 class="section-title"><span class="prompt">#</span> <span data-i18n="expHeading">Experience</span></h2>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-role" data-i18n="exp1Role">Luxury Sales Advisor &amp; Product Manager</span>
+            <span class="tl-date">04/2014 – 04/2021</span>
+          </div>
+          <p class="tl-org">Bucherer AG · Lucerne</p>
+          <ul class="tl-bullets">
+            <li data-i18n="exp1B1">Main point of contact for demanding national &amp; international clients buying luxury watches and jewelry.</li>
+            <li data-i18n="exp1B2">Worked daily across four languages (Mandarin / German / English / Spanish) to serve an international clientele.</li>
+            <li data-i18n="exp1B3">Owned visual merchandising, stock management and the department's main till.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-role" data-i18n="exp2Role">Sales Advisor · International Client Specialist</span>
+            <span class="tl-date">08/2022 – 12/2024</span>
+          </div>
+          <p class="tl-org">Swatch Flagship Store · Zurich / Lucerne</p>
+          <ul class="tl-bullets">
+            <li data-i18n="exp2B1">Advised demanding national and international clients on watches and jewelry through personalized consultations.</li>
+            <li data-i18n="exp2B2">Managed tour-operator relationships and international group bookings.</li>
+            <li data-i18n="exp2B3">Helped shape daily boutique operations and team spirit.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-role" data-i18n="exp3Role">Sales Advisor &amp; Customer Service, Watch &amp; Jewelry</span>
+            <span class="tl-date">01/2025 – 12/2025</span>
+          </div>
+          <p class="tl-org">Coop City · Aarau</p>
+          <ul class="tl-bullets">
+            <li data-i18n="exp3B1">Customer-oriented consulting and proactive service across watches and jewelry.</li>
+            <li data-i18n="exp3B2">Trained new team members on brand standards and product knowledge.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot accent"></div>
+        <div class="tl-content">
+          <div class="tl-meta">
+            <span class="tl-role" data-i18n="exp4Role">Independent Web Tools Portfolio · Solo Builder</span>
+            <span class="tl-date">2025 – <span data-i18n="present">present</span></span>
+          </div>
+          <p class="tl-org">junpingkoch-web · GitHub Pages</p>
+          <ul class="tl-bullets">
+            <li data-i18n="exp4B1">Solo-shipped 12+ live tools (calculators, planners, a resume builder, a Hugo blog) using AI coding agents as a build partner.</li>
+            <li data-i18n="exp4B2">Owns the full stack of a real micro-business: SEO, GA4 analytics, AdSense monetization, GDPR-compliant cookie consent, trilingual UX.</li>
+            <li data-i18n="exp4B3">This very page — animated, zero-framework, hand-built in a single session — is a live work sample, not a mockup.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section reveal" id="skills">
+    <h2 class="section-title"><span class="prompt">#</span> <span data-i18n="skillsHeading">Skills</span></h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3 data-i18n="skillGroup1">Sales &amp; Client Relations</h3>
+        <div class="chip-row">
+          <span class="chip">High-End Sales &amp; Negotiation</span>
+          <span class="chip">Luxury Customer Experience (CX)</span>
+          <span class="chip">International &amp; VIP Clientele</span>
+          <span class="chip">Visual Merchandising</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 data-i18n="skillGroup2">Languages</h3>
+        <div class="chip-row">
+          <span class="chip chip-accent">中文 · Native</span>
+          <span class="chip chip-accent">Deutsch · B2–C1</span>
+          <span class="chip chip-accent">English · B2–C1</span>
+          <span class="chip chip-accent">Español · B1</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3 data-i18n="skillGroup3">Tech &amp; Tools</h3>
+        <div class="chip-row">
+          <span class="chip">AI Tools (Claude Code &amp; more)</span>
+          <span class="chip">Salesforce CRM</span>
+          <span class="chip">Abacus ERP · Cegid POS</span>
+          <span class="chip">HTML/CSS/JS · GA4 &amp; SEO</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROOF OF WORK ===== -->
+  <section class="section reveal" id="proof">
+    <h2 class="section-title"><span class="prompt">#</span> <span data-i18n="proofHeading">Proof of Work — live, not slides</span></h2>
+    <div class="card-grid proof-grid">
+      <a class="proof-card" href="https://junpingkoch-web.github.io/zodiac-stars/" target="_blank" rel="noopener">
+        <div class="proof-icon">🔮</div>
+        <h3>Zodiac &amp; Stars</h3>
+        <p data-i18n="proof1">Trilingual zodiac calculator, custom SVG wheel.</p>
+        <span class="proof-link">junpingkoch-web.github.io/zodiac-stars ↗</span>
+      </a>
+      <a class="proof-card" href="https://junpingkoch-web.github.io/random-grouping-website/" target="_blank" rel="noopener">
+        <div class="proof-icon">🎲</div>
+        <h3>Random Grouping</h3>
+        <p data-i18n="proof2">Free tool for splitting people into fair groups.</p>
+        <span class="proof-link">junpingkoch-web.github.io/random-grouping-website ↗</span>
+      </a>
+      <a class="proof-card" href="https://junpingkoch-web.github.io/watch-price-tracker/" target="_blank" rel="noopener">
+        <div class="proof-icon">⌚</div>
+        <h3>Watch Price Tracker</h3>
+        <p data-i18n="proof3">Real CHF market-price data for luxury watches.</p>
+        <span class="proof-link">junpingkoch-web.github.io/watch-price-tracker ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section reveal" id="contact">
+    <div class="contact-box">
+      <h2 class="section-title contact-title"><span class="prompt">$</span> <span data-i18n="contactHeading">./get_in_touch.sh</span></h2>
+      <p data-i18n="contactBody">Open to Tech Sales / SDR / Account Executive conversations — Swiss &amp; DACH region or remote.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:junping.koch@gmail.com">junping.koch@gmail.com</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/junpingkoch1978" target="_blank" rel="noopener" data-i18n="ctaLinkedin">LinkedIn</a>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <span data-i18n="footer">Built solo with Claude Code — no template, no agency.</span>
+      <button id="matrixToggle" class="matrix-toggle" type="button" aria-pressed="false">[ matrix ]</button>
+    </footer>
+  </section>
+
+</main>
+
+<canvas id="matrixCanvas" aria-hidden="true"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
